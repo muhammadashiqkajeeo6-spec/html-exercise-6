@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Appointment Schedule</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <!-- Header Section -->
+        <header class="main-header">
+            <h1>Get In Touch</h1>
+            <p>Fill out the form below to drop us a message, or browse our available appointment schedule.</p>
+        </header>
+
+        <!-- Contact Form Section -->
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="johndoe@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="082 123 4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a topic...</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="booking">Appointment Booking</option>
+                        <option value="support">Technical Support</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Message</button>
+            </form>
+        </section>
+
+        <!-- Schedule Table Section -->
+        <section class="table-section">
+            <h2>Available Appointment Times</h2>
+            
+            <!-- Table Container for Responsive Horizontal Scroll -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time Slot</th>
+                            <th>Monday - Wednesday</th>
+                            <th>Thursday - Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 AM - 11:00 AM</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 AM - 01:00 PM</td>
+                            <td>Booked</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>01:00 PM - 02:00 PM</td>
+                            <td class="lunch-break" colspan="2">Lunch Break (Closed)</td>
+                        </tr>
+                        <tr>
+                            <td>02:00 PM - 04:00 PM</td>
+                            <td>Available</td>
+                            <td>Booked</td>
+                        </tr>
+                        <tr>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
